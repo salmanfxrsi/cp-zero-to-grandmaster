@@ -1,0 +1,4 @@
+Summation Is 16
+Subtraction Is 4
+Multiplication Is 60
+Division Is 1.666667
