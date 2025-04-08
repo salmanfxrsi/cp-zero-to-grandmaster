@@ -2,11 +2,14 @@
 
 int main()
 {
-    int a = 18;
-    int b = 5;
-    
-    int rem = a % b;
-    printf("%d", rem);
+    int taka;
+    scanf("%d", &taka);
 
+    if(taka >= 100){
+        printf("I eat burger\n");
+    }else{
+        printf("Don't eat burger\n");
+    }
+    
     return 0;
 }
