@@ -2,23 +2,25 @@
 
 int main() 
 {
-    int x, y;
-    scanf("%d%d", &x, &y);
+    int n;
+    scanf("%d\n", &n);
+
+    int first_digit = n/10;
+    int last_digit = n%10;
 
 
-    printf("%d %d\n", x, y);
-    // if(x % y == 0)
-    // {
-    //     printf("YES\n");
-    // }
-    // if(y % x == 0)
-    // {
-    //     printf("YES\n");
-    // }
-    // else
-    // {
-    //     printf("NO\n");
-    // }
+    if(last_digit == 0)
+    {
+        printf("YES\n");
+    }
+    else if(first_digit % last_digit == 0 || last_digit % first_digit == 0)
+    {
+        printf("YES\n");
+    }
+    else
+    {
+        printf("NO\n");
+    }
 
     return 0;
 }
