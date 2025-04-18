@@ -5,17 +5,17 @@ int main()
     int N;
     scanf("%d", &N);
 
-    if(N % 2 == 0){
+    if(N > 0){
         for(int counter = 1; counter <= N; counter++)
         {
-            printf("%d", counter);
+            printf("%d ", counter);
         }
     }
     else
     {
-        for(int counter = 1; counter <= N; counter++)
+        for(int counter = N; counter <= 0; counter++)
         {
-            printf("%d", counter);
+            printf("%d ", counter);
         }
     }
 
