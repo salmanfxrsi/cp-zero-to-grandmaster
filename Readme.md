@@ -23,9 +23,8 @@ Here's a glimpse into the areas I'll be focusing on:
 - **Competitive Programming Platforms**: I’ll be participating in challenges from:
   - Codeforces
   - LeetCode
-  - AtCoder
+  - CodeChef
   - HackerRank
-  - TopCoder
   - And many others
 - **Mathematics for CP**: Number theory, combinatorics, probability, and graph theory.
 
