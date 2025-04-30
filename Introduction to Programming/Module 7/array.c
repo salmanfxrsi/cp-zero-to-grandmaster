@@ -6,7 +6,7 @@ int main()
     arr[1] = 1;
     arr[2] = 2;
     arr[6] = 6;
-    printf("%d", arr[2]);
+    printf("%d", arr[6]);
 
     return 0;
 }
