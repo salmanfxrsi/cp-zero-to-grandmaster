@@ -6,10 +6,7 @@ int main()
     char str1[101], str2[101];
     scanf("%s %s", &str1, &str2);
 
-    for(int i = 0; i <= strlen(str2); i++)
-    {
-        str1[i] = str2[i];
-    }
+    strcpy(str1, str2);
 
     printf("%s %s\n", str1, str2);
 
