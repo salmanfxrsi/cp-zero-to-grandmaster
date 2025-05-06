@@ -9,6 +9,8 @@ int main()
 
     int* ptr;
     ptr = &x;
+    *ptr = 20;
+    printf("%d\n", x);
     printf("%p\n", ptr);
     printf("%p\n", &ptr);
     
