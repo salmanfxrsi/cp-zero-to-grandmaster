@@ -2,12 +2,24 @@
 
 int main() 
 {
-    int N;
+    int N;  
     scanf("%d", &N);
 
-    for(int i = 1; i <= N; i++)
+    int star = 1, gap = N - 1;
+
+    for(int i = 0; i < N; i++)
     {
-        for(int j = 1; j <= N - i; i++)
+        for(int j = 0; j < gap; j++)
+        {
+            printf(" ");
+        }
+        gap--;
+
+        for(int k = 0; k < star; k++)
+        {
+            printf("*");
+        }
+        star += 2;
 
         printf("\n");
     }
