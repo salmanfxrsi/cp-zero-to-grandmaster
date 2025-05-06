@@ -1,2 +1,1 @@
-address of x in fun function --> 0061FF00
-address of x in main function --> 0061FF1C
+20
