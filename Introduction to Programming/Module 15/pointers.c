@@ -1,3 +1,5 @@
+// pointer is a variable who store the address of another variable;
+
 #include<stdio.h>
 
 int main() 
@@ -9,7 +11,7 @@ int main()
 
     int* ptr;
     ptr = &x;
-    *ptr = 20;
+    *ptr = 20; // dereferencing pointer
     printf("%d\n", x);
     printf("%p\n", ptr);
     printf("%p\n", &ptr);
