@@ -44,7 +44,9 @@ int main()
         }
         gap++;
 
-        if(i % 2 != 0)
+        int line = N - i;
+
+        if(line % 2 != 0)
         {
             for(int j = 1; j <= symbol; j++)
             {
