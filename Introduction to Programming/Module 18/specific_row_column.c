@@ -14,15 +14,13 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
-    
-    for(int i = 0; i < r; i++)
-    {
-        for(int j = 0; j < c; j++)
-        {
-            printf("%d ", a[i][j]);
-        }
-        printf("\n");
-    }
 
+    int res_col;
+    scanf("%d", &res_col);
+
+    for(int j = 0; j < r; j++)
+        {
+            printf("%d ", a[j][res_col - 1]);
+        }
     return 0;
 }
