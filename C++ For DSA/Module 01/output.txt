@@ -1,1 +1,3 @@
-Hello World!
+100 S 34.56
+Hello, World!
+The Number is 100
