@@ -1,4 +1,1 @@
-You entered: 10
-Character: S
-Double: 54.33
-ASCII value of character S is: 83
+34.57
