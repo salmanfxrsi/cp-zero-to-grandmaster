@@ -10,32 +10,14 @@ int main()
     for (int i = 0; i < N; i++)
         cin >> A[i];
 
-    for (int i = 0; i < N - 1; i++)
-    {
-        for (int j = i + 1; j < N; j++)
-        {
-            if (A[i] > A[j])
-            {
-                swap(A[i], A[j]);
-            }
-        }
-    }
+    sort(A, A + N);
 
     for (int i = 0; i < N; i++)
         cout << A[i] << " ";
 
     cout << endl;
 
-    for (int i = 0; i < N - 1; i++)
-    {
-        for (int j = i + 1; j < N; j++)
-        {
-            if (A[i] < A[j])
-            {
-                swap(A[i], A[j]);
-            }
-        }
-    }
+    sort(A, A + N, greater<int>());
 
     for (int i = 0; i < N; i++)
         cout << A[i] << " ";
