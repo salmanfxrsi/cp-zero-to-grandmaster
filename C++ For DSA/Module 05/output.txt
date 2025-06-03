@@ -1,5 +1,4 @@
-Not Empty
-30
-2147483647
-20
-Hello, World!xxxxxxx
+H
+!
+e
+H
