@@ -1,4 +1,1 @@
-H
-!
-e
-H
+Hello, World!
