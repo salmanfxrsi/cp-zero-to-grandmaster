@@ -13,18 +13,23 @@ int main()
     // v.erase(v.begin() + 1, v.begin() + 5);
 
     // replace(v.begin(), v.end(), 2, 100);
-    auto it = find(v.begin(), v.end(), 5);
-    if (it == v.end())
-    {
-        cout << "Not Found" << endl;
-    }
-    else
-    {
-        cout << "Found" << endl;
-    }
+    // auto it = find(v.begin(), v.end(), 5);
+    // if (it == v.end())
+    // {
+    //     cout << "Not Found" << endl;
+    // }
+    // else
+    // {
+    //     cout << "Found" << endl;
+    // }
 
-    for (int x : v)
-        cout << x << " ";
+    // for (int x : v)
+    //     cout << x << " ";
+
+    cout << v[3] << endl;
+    cout << v.back() << endl;
+    cout << v.front() << endl;
+    cout << v.at(2) << endl;
 
     return 0;
 }
