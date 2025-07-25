@@ -16,6 +16,27 @@ public:
     }
 };
 
+void print_forward(Node *head)
+{
+    Node *tmp = head;
+    while (tmp != NULL)
+    {
+        cout << tmp->data << " ";
+        tmp = tmp->next;
+    }
+    cout << endl;
+}
+
+void print_backward(Node *tail)
+{
+    Node *tmp = tail;
+    while (tmp != NULL)
+    {
+        cout << tmp->data << " ";
+        tmp = tmp->prev;
+    }
+}
+
 int main()
 {
     Node *head = new Node(10);
@@ -24,9 +45,12 @@ int main()
 
     head->next = a;
     a->prev = head;
-    
+
     a->next = tail;
     tail->prev = a;
+
+    print_forward(head);
+    print_backward(tail);
 
     return 0;
 }
