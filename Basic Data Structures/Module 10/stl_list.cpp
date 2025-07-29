@@ -7,6 +7,9 @@ int main()
     int a[] = {10, 20, 30};
     vector<int> v = {10, 20, 30};
     list<int> l2(v.begin(), v.end());
+
+    l2.clear();
+    cout << l2.size() << endl;
     for (int val : l2)
     {
         cout << val << endl;
