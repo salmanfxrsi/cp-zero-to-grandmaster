@@ -1,1 +1,0 @@
-find(v.begin(), v.end(), 100);
