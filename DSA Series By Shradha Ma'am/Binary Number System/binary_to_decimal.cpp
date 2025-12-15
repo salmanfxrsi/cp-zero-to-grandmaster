@@ -10,8 +10,8 @@ int binaryToDec(int binaryNum)
         int rem = binaryNum % 10;
         ans += (rem * pow);
 
-        binaryNum /= 2;
-        rem *= 2;
+        binaryNum /= 10;
+        pow *= 2;
     }
 
     return ans;
