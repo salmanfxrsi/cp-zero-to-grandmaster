@@ -1,28 +1,26 @@
 #include <iostream>
 using namespace std;
 
-int decToBinary(int decNum)
+int binaryToDec(int binaryNum)
 {
     int ans = 0, pow = 1;
 
-    while (decNum > 0)
+    while (binaryNum > 0)
     {
-        int rem = decNum % 2;
-        decNum /= 2;
-
+        int rem = binaryNum % 10;
         ans += (rem * pow);
-        pow *= 10;
+
+        binaryNum /= 2;
+        rem *= 2;
     }
 
     return ans;
 }
 
-
 int main()
 {
-    int decNum = 50;
+    int binaryNum = 1100101;
 
-    cout << decToBinary(decNum);
-
+    cout << binaryToDec(binaryNum);
     return 0;
 }
