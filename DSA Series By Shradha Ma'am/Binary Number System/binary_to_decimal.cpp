@@ -15,7 +15,7 @@ int binaryToDec(int binaryNum)
     }
 
     return ans;
-}
+} 
 
 int main()
 {
