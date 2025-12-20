@@ -15,13 +15,23 @@ bool isPowerOfTwo(int num)
 
 // 2. WAF to reverse an Integer n
 
-void problem_two()
+int reverseInt(int num)
 {
+    int reverse_num = 0;
+
+    while (num != 0)
+    {
+        int lastDigit = num % 10;
+        reverse_num = (reverse_num * 10) + lastDigit;
+        num /= 10;
+    }
+
+    return reverse_num;
 }
 
 int main()
 {
-    cout << isPowerOfTwo(6);
-    problem_two();
+    cout << isPowerOfTwo(6) << endl;
+    cout << reverseInt(521);
     return 0;
 }
