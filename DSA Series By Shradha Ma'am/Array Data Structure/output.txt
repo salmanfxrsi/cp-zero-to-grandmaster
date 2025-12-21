@@ -1,2 +1,2 @@
-Smallest: -24
-Largest: 22
+In main function:
+2 4 6 
