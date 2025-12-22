@@ -1,2 +1,1 @@
-In main function:
-2 4 6 
+-1
