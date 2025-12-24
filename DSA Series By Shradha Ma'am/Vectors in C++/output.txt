@@ -1,4 +1,2 @@
-Size: 11
-front val: 1
-back val: 0
-val at 8: 9
+size: 5
+capacity: 8
