@@ -9,23 +9,26 @@ int majorityElement(vector<int> &nums)
     sort(nums.begin(), nums.end());
 
     int freq = 1, ans = nums[0];
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
-        if(nums[i] == nums[i - 1])
+        if (nums[i] == nums[i - 1])
         {
             freq++;
         }
-        else {
+        else
+        {
             freq = 1;
             ans = nums[i];
         }
 
-        if(freq > n/2) return ans;
+        if (freq > n / 2)
+            return ans;
     }
 
     return -1;
 }
 
+// main
 int main()
 {
     vector<int> nums;
@@ -38,7 +41,14 @@ int main()
 
     int result = majorityElement(nums);
 
-    cout << result;
+    if (result == -1)
+    {
+        cout << "all elements are equal";
+    }
+    else
+    {
+        cout << "majority element is " << result;
+    }
 
     return 0;
 }
